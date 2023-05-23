@@ -22,7 +22,18 @@ public class Exercicio {
             System.out.println("Nota quarto bimestre: ");
             Float quarto = s.nextFloat();
 
-            System.out.println("Media: " + (primeiro + segundo + terceiro + quarto) / 4);
+            Float media = (primeiro + segundo + terceiro + quarto) / 4;
+
+            if(media >= 7 ){
+                System.out.println("Resultado: Aprovado");
+                System.out.println("Media: " + media);
+            }else if(media >= 5){
+                System.out.println("Resultado: Recuperação");
+                System.out.println("Media: " + media);
+            }else{
+                System.out.println("Resultado: Reprovado");
+                System.out.println("Media: " + media);
+            }
 
             System.out.println("Deseja gerar novamente a tabuada? ");
             resposta = s.next();
