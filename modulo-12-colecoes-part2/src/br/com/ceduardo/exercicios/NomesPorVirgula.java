@@ -27,6 +27,3 @@ public class NomesPorVirgula {
      }
     }
 }
-
-System.out.println(separar[0]);
-            System.out.println(separar[1]);
